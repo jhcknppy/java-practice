@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+app:
+  jwt:
+    secret: "6d5c4b3a2918f7e6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2"
+    expiration: 86400000
+
+spring:
+  application:
+    name: java-practice
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/java_practice?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    username: root
+    password: "Jhcknppy!"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+
+logging:
+  level:
+    com.javapractice: info
