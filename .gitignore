@@ -5,3 +5,8 @@ frontend/src/.umi/
 frontend/src/.umi-production/
 .DS_Store
 .idea/
+
+# 环境变量
+.env
+.env.local
+.env.*.local
